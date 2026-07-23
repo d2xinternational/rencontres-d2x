@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.rencontresd2x.com/sitemap.xml

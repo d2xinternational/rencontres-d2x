@@ -1,0 +1,11 @@
+.claude/
+.DS_Store
+*.log
+node_modules/
+.env
+.env.local
+
+# Vidéos sources non compressées (trop lourdes pour git/déploiement).
+# On garde les versions web compressées (assets/presentation.mp4, assets/temoignage-*.mp4).
+assets/*.mov
+assets/Vidéo Événement D2X 2026 Rencontres Professionnelles.mp4
