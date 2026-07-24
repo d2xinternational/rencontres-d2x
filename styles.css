@@ -812,13 +812,6 @@ section { padding: 96px 0; }
   display: flex; width: fit-content; padding: 5px; gap: 4px; margin-bottom: 28px;
   background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px;
 }
-@media (max-width: 480px) {
-  .persona-toggle { width: 100%; }
-  .persona-toggle__opt {
-    flex: 1 1 0; min-width: 0; justify-content: center; text-align: center;
-    gap: 6px; padding: 9px 10px; font-size: 0.8125rem; line-height: 1.2; white-space: normal;
-  }
-}
 .persona-toggle__opt {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 9px 20px; border-radius: 999px; font-size: 0.9375rem; font-weight: 500;
@@ -828,6 +821,14 @@ section { padding: 96px 0; }
 .persona-toggle__opt.is-active { color: #fff; }
 .persona-toggle__opt--collectivite.is-active { background: var(--collectivite); }
 .persona-toggle__opt--partenaire.is-active { background: var(--partenaire); }
+/* Media query APRÈS les règles de base : à priorité égale, la dernière règle gagne */
+@media (max-width: 480px) {
+  .persona-toggle { width: 100%; }
+  .persona-toggle__opt {
+    flex: 1 1 0; min-width: 0; justify-content: center; text-align: center;
+    gap: 6px; padding: 9px 10px; font-size: 0.8125rem; line-height: 1.2; white-space: normal;
+  }
+}
 
 /* Badge "100% pris en charge" */
 .badge-100 {
